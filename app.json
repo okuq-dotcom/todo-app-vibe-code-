@@ -21,10 +21,35 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.qta.todoapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "scheme": "todo-app",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#4A90D9"
+        }
+      ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "d9797cfe-5a5f-451c-9c16-dc51cd374ddc"
+      }
+    },
+    "owner": "qta",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d9797cfe-5a5f-451c-9c16-dc51cd374ddc"
     }
   }
 }
